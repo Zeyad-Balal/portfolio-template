@@ -1,4 +1,11 @@
 <section>
+    <main>
+        <div class="content">
+            <img *ngFor="let img of trailImages" 
+                 class="content__img" 
+                 [src]="img" />
+        </div>
+    </main>
 
     <div class="land-container">
 
@@ -43,16 +50,14 @@
 
 
         <div class="container-footer">
-            <div class="rotating-cd">
+            <div class="rotating-cd cr">
                 <img src="https://static.tildacdn.com/tild6363-6134-4438-a231-333938386130/cssda-wotd-dark.png" alt="">
             </div>
 
             <div class="footer-text">
-                <p>hey, i'm Diana - web designer currently based in Switzerland.</p>
-                <p>I specialize in crafting compelling landing pages and multi-page.</p>
+                <p style="white-space: nowrap;">hey, i'm Diana - web designer currently based in Switzerland.</p>
+                <p style="white-space: nowrap;">I specialize in crafting compelling landing pages and multi-page websites that deliver exceptional user experiences.</p>
             </div>
         </div>
     </div>
-
-
 </section>
