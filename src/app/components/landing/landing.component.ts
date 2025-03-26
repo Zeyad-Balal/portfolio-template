@@ -21,6 +21,18 @@ export class LandingComponent implements OnInit {
     'https://static.tildacdn.com/tild6264-6237-4637-a632-306133336538/Instagram_story_-_45.jpg'
   ];
 
+  partners = [
+    '../../../assets/images/co-operations/fawry_logo.jpg',
+    '../../../assets/images/co-operations/maggi_logo.png',
+    '../../../assets/images/co-operations/morocoGov.jpg',
+    // '../../../assets/images/co-operations/saudi_logo.jpg',
+    '../../../assets/images/co-operations/Takka_logo.png',
+    '../../../assets/images/co-operations/download - Copy (3).jpg',
+    '../../../assets/images/co-operations/logo.jpg',
+    '../../../assets/images/co-operations/aloEvaLogo.webp',
+    '../../../assets/images/co-operations/mac_logo2.jpg',
+  ];
+
   private mousePos = { x: 0, y: 0 };
   private lastMousePos = { x: 0, y: 0 };
   private cacheMousePos = { x: 0, y: 0 };
@@ -35,6 +47,14 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
     this.render();
+    this.muteAllVideos();
+  }
+
+  private muteAllVideos(): void {
+    const videos = document.getElementsByTagName('video');
+    for (let i = 0; i < videos.length; i++) {
+      videos[i].muted = true;
+    }
   }
 
   @HostListener('document:mousemove', ['$event'])
@@ -43,6 +63,12 @@ export class LandingComponent implements OnInit {
       x: event.clientX, 
       y: event.clientY 
     };
+  }
+
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
   }
 
   private render(): void {

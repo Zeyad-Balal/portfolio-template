@@ -1,63 +1,210 @@
-<section>
-    <main>
-        <div class="content">
-            <img *ngFor="let img of trailImages" 
-                 class="content__img" 
-                 [src]="img" />
+<section class="main-section">
+
+    <section class="hero-section">
+        <main>
+            <div class="content">
+                <img *ngFor="let img of trailImages" class="content__img" [src]="img" />
+            </div>
+        </main>
+
+        <div class="land-container">
+
+            <div class="container-header">
+
+                <div class="container-header-title boldonse-regular"><span>G</span>RAPHIC <span>D</span>ESIGNER</div>
+
+                <div class="container-header-text"><span>With every project, my goal is to translate my clients' visions
+                        into designs that not only
+                        captivate</span>
+                    <br>
+                    <span> but also connect deeply with their audience, ensuring the brand's message is both seen and
+                        felt</span>
+                </div>
+
+            </div>
+
+            <div class="side-links">
+                <div class="link-section">
+                    <a href="#">[resume]</a>
+                    <a href="#">[linkedIn]</a>
+                    <a href="#">[email]</a>
+                </div>
+                <div class="link-section">
+                    <a href="#">[behance]</a>
+                    <a href="#">[pinterest]</a>
+                    <a href="#">[dribbble]</a>
+                </div>
+                <div class="link-section">
+                    <a href="#">[instagram]</a>
+                    <a href="#">[telegram]</a>
+                </div>
+            </div>
+
+            <div class="container-content cr">
+                <div class="folder-container">
+                    <a class="fff" href="#projects-folder" (click)="scrollToSection($event, 'projects-folder')">
+                        <img class="folder"
+                            src="https://static.tildacdn.com/tild3265-6565-4961-b532-643663376435/icons8-mac-folder-96.png"
+                            alt="projects-folder">
+                        <span>[Projects]</span>
+                    </a>
+
+                    <div class="fff">
+                        <img class="folder"
+                            src="https://static.tildacdn.com/tild3265-6565-4961-b532-643663376435/icons8-mac-folder-96.png"
+                            alt="projects-folder">
+                        <span>[Process]</span>
+
+                    </div>
+                    <div class="fff">
+                        <img class="folder"
+                            src="https://static.tildacdn.com/tild3265-6565-4961-b532-643663376435/icons8-mac-folder-96.png"
+                            alt="projects-folder">
+                        <span>[Awards]</span>
+
+                    </div>
+                    <div class="fff">
+                        <img class="folder"
+                            src="https://static.tildacdn.com/tild3265-6565-4961-b532-643663376435/icons8-mac-folder-96.png"
+                            alt="projects-folder">
+                        <span>[Price]</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container-footer">
+                <div class="rotating-cd cr">
+                    <img src="https://static.tildacdn.com/tild6363-6134-4438-a231-333938386130/cssda-wotd-dark.png"
+                        alt="">
+                </div>
+
+                <div class="footer-text">
+                    <p style="white-space: nowrap;">hey, i'm Diana - web designer currently based in Switzerland.</p>
+                    <p style="white-space: nowrap;">I specialize in crafting compelling landing pages and multi-page
+                        websites that deliver exceptional user experiences.</p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <div class="land-container">
-
-        <div class="container-header">
-
-            <div class="container-header-title boldonse-regular"><span>G</span>RAPHIC <span>D</span>ESIGNER</div>
-
-            <div class="container-header-text"><span>With every project, my goal is to translate my clients' visions into designs that not only
-                    captivate</span>
-                <br>
-                <span> but also connect deeply with their audience, ensuring the brand's message is both seen and felt</span>
+    <section id="projects-folder" class="projects-section">
+        <div class="projects-container">
+            <div class="co-op">
+                <h2>Trusted Partners</h2>
+                <div class="co-operations cr">
+                    <div class="partner-grid">
+                        <img *ngFor="let partner of partners" [src]="partner" [alt]="partner" class="partner-logo">
+                    </div>
+                </div>
             </div>
-          
+     
+
+            <div class="projects">
+                <h2 class="section-title">[Projects]</h2>
+                <!-- fawry -->
+                <div class="single-project">
+                    <div class="project-intro">
+                        <img src="../../../assets/images/co-operations/fawry_logo.jpg" alt="Fawry Project" class="project-logo">
+                        <div class="project-details">
+                            <h3>Fawry Pay</h3>
+                            <p class="project-description">
+                                Payment gateway service provider that offers secure and convenient payment solutions.
+                            </p>
+                            <div class="tools-used">
+                                <span>[Figma]</span>
+                                <span>[Adobe XD]</span>
+                                <span>[Illustrator]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="video-container">
+                            <video autoplay loop muted class="project-video">
+                                <source src="../../../assets/images/co-operations/fawry2.mp4" type="video/mp4">
+                            </video>
+                            <video autoplay loop muted class="project-video">
+                                <source src="../../../assets/images/co-operations/fawry1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Takka -->
+                 <div class="single-project">
+                    <div class="project-intro">
+                        <img src="../../../assets/images/co-operations/Takka_logo.png" alt="TakkaProject" class="project-logo">
+                        <div class="project-details">
+                            <h3>Takka</h3>
+                            <p class="project-description">
+                                food delivery service that offers a variety of meals, snacks, and drinks.
+                            </p>
+                            <div class="tools-used">
+                                <span>[Figma]</span>
+                                <span>[Adobe XD]</span>
+                                <span>[Illustrator]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="video-container">
+                            <video autoplay loop muted class="project-video">
+                                <source src="../../../assets/images/co-operations/takka1.mp4" type="video/mp4">
+                            </video>
+                            <video autoplay loop muted class="project-video">
+                                <source src="../../../assets/images/co-operations/takka2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+
+                <!-- mac -->
+                <div class="single-project">
+                    <div class="project-intro">
+                        <img src="../../../assets/images/co-operations/mac_logo2.jpg" alt="MAC Project" class="project-logo">
+                        <div class="project-details">
+                            <h3>McDonald's</h3>
+                            <p class="project-description">
+                                Fast food restaurant chain that offers a variety of burgers, fries, and drinks.
+                            </p>
+                            <div class="tools-used">
+                                <span>[Figma]</span>
+                                <span>[Adobe XD]</span>
+                                <span>[Illustrator]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="video-container">
+                            <div class="media-wrapper">
+                                <img src="../../../assets/images/co-operations/mac2.jpg" alt="McDonald's Design" class="project-media">
+                            </div>
+                            <div class="media-wrapper">
+                                <video autoplay loop muted playsinline class="project-media">
+                                    <source src="../../../assets/images/co-operations/mac1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+
+
+
+            </div>
+
+
+
+
         </div>
+    </section>
 
-        <div class="side-links">
-            <div class="link-section">
-                <a href="#">[resume]</a>
-                <a href="#">[linkedIn]</a>
-                <a href="#">[email]</a>
-            </div>
-            <div class="link-section">
-                <a href="#">[behance]</a>
-                <a href="#">[pinterest]</a>
-                <a href="#">[dribbble]</a>
-            </div>
-            <div class="link-section">
-                <a href="#">[instagram]</a>
-                <a href="#">[telegram]</a>
-            </div>
-        </div>
-
-        <div class="container-content cr">
-            <div class="folder-container" routerLink="/home">
-                <img class="folder"
-                src="https://static.tildacdn.com/tild3265-6565-4961-b532-643663376435/icons8-mac-folder-96.png"
-                alt="projects-folder">
-                <span>[Projects]</span>
-            </div>
-           
-        </div>
-
-
-        <div class="container-footer">
-            <div class="rotating-cd cr">
-                <img src="https://static.tildacdn.com/tild6363-6134-4438-a231-333938386130/cssda-wotd-dark.png" alt="">
-            </div>
-
-            <div class="footer-text">
-                <p style="white-space: nowrap;">hey, i'm Diana - web designer currently based in Switzerland.</p>
-                <p style="white-space: nowrap;">I specialize in crafting compelling landing pages and multi-page websites that deliver exceptional user experiences.</p>
-            </div>
-        </div>
-    </div>
 </section>
