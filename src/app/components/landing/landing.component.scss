@@ -203,12 +203,40 @@
     position: relative;
     padding: 4rem 2rem;
     background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.95) 0%,
-        rgba(248, 243, 248, 0.9) 100%
-    );
-    position: relative;
-    
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('../../../assets/images/alice-donovan-rouse-yu68fUQDvOI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    // Update text colors for better contrast
+    .container-header-title {
+        color: white;
+    }
+
+    .container-header-text {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .side-links a {
+        color: rgba(255, 255, 255, 0.8);
+        
+        &:hover {
+            color: white;
+        }
+    }
+
+    .fff span {
+        background-color: transparent;
+        color: white;
+    }
+
+    .footer-text p {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
     &::after {
         content: '';
         position: absolute;
