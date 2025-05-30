@@ -1,15 +1,18 @@
-/*Nav bar*/
 .nav-container {
-  background: linear-gradient(270deg, #204775 45%, #010101 100%);
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  width: 100%;
-
-  //   border-radius: 24px;
-  //   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); // Adds a subtle shadow
+  width: 90%;
+  margin: 40px auto;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); // Adds a subtle shadow
+  img {
+    width: 120px;
+    height: 80px;
+  }
 }
 
 ul {
@@ -22,22 +25,27 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 600;
   padding: 10px 20px;
 
   &:hover {
-    color: #fb3a3a;
+    color: #0db75f;
   }
 }
 
 .active {
-  color: red !important; // Override the default link color
+  color: #0db75f !important; // Override the default link color
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
   .signup {
     color: white;
     margin-right: 50px;
@@ -47,9 +55,8 @@ a {
       height: 48px;
       width: 130px;
       border-radius: 12px;
-      background-color: #fb3a3a;
-      font-size: 19px;
-      text-align: center;
+      background-color: #0db75f;
+      font-size: 16px;
       /* Adjust size as needed */
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
@@ -106,8 +113,8 @@ a {
       justify-content: center;
       align-items: center;
       .parent-box {
-        width: 250px;
-        height: 300px;
+        width: 300px;
+        height: 330px;
         background-color: #0db75f;
         position: relative;
 
@@ -122,10 +129,10 @@ a {
 
           img {
             width: 100%;
-            height: 100%;
+            height: 400px;
             object-fit: cover;
             position: absolute;
-            top: 41%;
+            top: 29%;
             left: 50%;
             transform: translate(-50%, -50%);
           }
@@ -152,14 +159,34 @@ a {
       .svg-icons {
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 25px;
         align-items: center;
         svg {
           width: 20px;
           height: 20px;
-          color: #0db75f;
         }
       }
+    }
+  }
+}
+
+/*statistics section*/
+.statistics-section {
+  margin-top: 60px;
+  .statistics {
+    hr {
+      width: 5%;
+      height: 1px;
+      border: 2px solid #087a3f;
+      rotate: 90deg;
+    }
+    h1 {
+      color: #0db75f;
+    }
+    p {
+      color: #010101;
+      font-weight: 600;
+      font-size: 24px;
     }
   }
 }
