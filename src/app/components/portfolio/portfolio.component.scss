@@ -264,11 +264,15 @@ a {
   padding: 60px 0;
 
   .partners {
+    span {
+      color: #0bb04a;
+      font-weight: bold;
+    }
     h1 {
-      margin-bottom: 40px;
-      span {
-        color: #0db75f;
-      }
+      color: #010101;
+    }
+    p {
+      color: #010101;
     }
 
     .partners-logos {
@@ -283,14 +287,116 @@ a {
           align-items: center;
 
           img {
-            max-width: 120px;
-            max-height: 100px;
+            max-width: 150px;
+            height: 150px;
             object-fit: contain;
-
           }
         }
-
       }
+    }
+  }
+}
+
+/*works section*/
+.works-section {
+  padding: 60px 0;
+
+  .works-text {
+    h1 {
+      margin-bottom: 40px;
+    }
+    span {
+      color: #0db75f;
+      font-weight: bold;
+    }
+
+    .show-more-btn {
+      button {
+        color: white;
+        height: 40px;
+        width: 130px;
+        border-radius: 12px;
+        background-color: #0db75f;
+        font-size: 16px;
+        font-weight: 400;
+
+        text-align: center;
+        /* Adjust size as needed */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    }
+  }
+
+  .works-imgs {
+    .imgs {
+      img {
+        width: 50%;
+        border-radius: 9px;
+        height: 50%;
+      }
+    }
+  }
+}
+
+/*contacts section*/
+
+.contacts-section {
+  .contacts {
+    .contacts-text {
+      span {
+        color: #0bb04a;
+        font-weight: bold;
+      }
+      h1 {
+        color: #010101;
+      }
+      p {
+        color: #010101;
+        text-align: center;
+      }
+
+      .contact-btn {
+        button {
+          color: white;
+          height: 40px;
+          width: 100px;
+          border-radius: 12px;
+          background-color: #0db75f;
+          font-size: 16px;
+          font-weight: 400;
+
+          text-align: center;
+          /* Adjust size as needed */
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+        }
+      }
+    }
+
+    .form {
+      .contacts-numbers {
+        .info-card {
+          padding: 15px;
+          width:70%;
+          background-color: #ffffff;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          .info{
+            span {
+              color: #0bb04a;
+              font-weight: bold;
+              font-size: 16px;
+            }
+            p{
+              color: #010101;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      
     }
   }
 }
